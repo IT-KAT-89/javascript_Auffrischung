@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<script type="text/javascript">
+			<!--
+				
+				document.write("Entering the loop <br/>");
+				outerloop: //Hier wird der Label-Name festgelegt
+				for(var i=0; i<5; i++)
+				{
+					document.write("Outerloop: "+i+"<br/>");
+					innerloop: //label-Name für inner loop festgelegt
+					for(var j=0; j<5; j++)
+					{
+						if(j > 3) break; // Quit the inner most loop
+						if(i==3) break innerloop; // Quit the inner most loop
+						if(i == 4) break outerloop;// Quit the outer loop
+						
+						document.write("Innerloop: "+j+"<br/>");
+					}
+				}
+				document.write("Exiting the loop");
+				
+				
+			//-->
+		</script>
+	</body>
+</html>
